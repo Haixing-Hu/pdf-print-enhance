@@ -14,11 +14,61 @@
 
 ## 🚀 快速开始
 
-### 1. 环境准备
+### 1. Python 版本要求
+
+本项目需要 **Python 3.11**（固定版本）。
+
+⚠️ **重要提示**：请严格按照 Python 3.11 版本安装，不要使用其他版本（如 3.10、3.12、3.13），因为版本不匹配会导致依赖包兼容性问题。
+
+**检查 Python 版本**：
+```bash
+python3 --version
+# 或
+python --version
+```
+
+**如果版本不符合要求，请安装 Python 3.11**：
+- [Python 官网下载](https://www.python.org/downloads/)
+- 或使用包管理器：
+  ```bash
+  # macOS (使用 Homebrew)
+  brew install python@3.11
+
+  # Ubuntu/Debian
+  sudo apt update
+  sudo apt install python3.11 python3.11-venv python3.11-pip
+
+  # CentOS/RHEL
+  sudo yum install python311 python311-pip
+  ```
+
+### 2. 创建虚拟环境
+
+**使用 Python 3.11 创建虚拟环境**：
+```bash
+# 创建虚拟环境（必须使用 python3.11）
+python3.11 -m venv .venv
+
+# 激活虚拟环境
+# macOS/Linux:
+source .venv/bin/activate
+
+# Windows:
+# .venv\Scripts\activate
+
+# 验证 Python 版本（必须显示 Python 3.11.x）
+python --version
+# 输出示例：Python 3.11.9
+```
+
+### 3. 安装依赖
 
 ```bash
-# 激活虚拟环境
+# 确保虚拟环境已激活
 source .venv/bin/activate
+
+# 升级 pip
+pip install --upgrade pip
 
 # 一次性安装所有依赖
 pip install -r requirements.txt
@@ -46,7 +96,7 @@ choco install poppler
 # 3. 添加 C:\poppler\bin 到系统 PATH
 ```
 
-### 2. 下载模型
+### 4. 下载模型
 
 ```bash
 # 下载 DocEnTR 预训练模型
