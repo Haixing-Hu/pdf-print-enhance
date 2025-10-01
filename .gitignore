@@ -1,0 +1,82 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual Environment
+.venv/
+venv/
+ENV/
+env/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Logs
+logs/
+*.log
+
+# Temporary files
+temp/
+tmp/
+test_output/
+debug_temp/
+
+# Model weights (大文件，不要提交到 git)
+models/
+*.pth
+*.pt
+
+# Output files
+*_enhanced.pdf
+enhanced/
+output/
+
+# Test PDF files
+pdf/
+
+# External dependencies (no longer needed)
+external/
+
+# Temporary requirements files
+temp_requirements.txt
+
+# Old scripts (no longer needed)
+docentr_batch.sh
+docentr_enhance.py
+test_pdf_enhance.py
+
+# Jupyter Notebook
+.ipynb_checkpoints/
+
+# pytest
+.pytest_cache/
+.coverage
+htmlcov/
+
+# mypy
+.mypy_cache/
+.dmypy.json
+dmypy.json
